@@ -3,6 +3,10 @@
 ## 📌 Descripción
 Este proyecto implementa una aplicación gráfica en **Python** utilizando **Tkinter** para la gestión de una base de datos PostgreSQL. Permite administrar **alumnos**, **empleados**, **servicios** y la asignación de alumnos a clases, todo desde una interfaz amigable.
 
+⚠️ **Nota importante**: El código compartido no está listo para funcionar directamente con un simple copypaste.  
+Es necesario **introducir correctamente los parámetros de conexión** en la función `psycopg2.connect()`.  
+En particular, los valores de **`host`** y **`password`** deben ser facilitados por el **Administrador de la base de datos**. El resto de parámetros (`database`, `user`) ya vienen configurados en el código y pueden mantenerse, siempre que coincidan con la configuración del entorno.
+
 ---
 
 ## ⚙️ Tecnologías utilizadas
@@ -78,7 +82,7 @@ La aplicación interactúa con las siguientes tablas:
 
 ## 🚀 Flujo de ejecución
 1. Se inicializa la aplicación con `Tk()`.
-2. Se establece la conexión a la base de datos.
+2. Se establece la conexión a la base de datos (**introduciendo el `host` y la `password` proporcionados por el Administrador**).
 3. Se crean los frames de **Alumnos**, **Empleados**, **Servicios** y **Asignaciones**.
 4. Se cargan los datos iniciales desde la base de datos.
 5. El usuario interactúa con la interfaz para realizar operaciones CRUD.
@@ -105,7 +109,16 @@ La aplicación interactúa con las siguientes tablas:
 - Mensajes de error mostrados con `messagebox.showerror`.
 
 ---
+## ⚖️ Licencia y distribución
+
+Este proyecto **no está permitido para copia ni distribución sin autorización expresa**.  
+En caso de querer reutilizarlo o modificarlo, se deberá crear un **FORK** autorizado por el Administrador o el propietario del código.
+
+---
 
 ## ▶️ Ejecución
 ```bash
 python BBDD_Gimnasio.py
+
+
+
