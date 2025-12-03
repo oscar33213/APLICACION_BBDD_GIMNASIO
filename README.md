@@ -121,4 +121,3 @@ En caso de querer reutilizarlo o modificarlo, se deberá crear un **FORK** autor
 python BBDD_Gimnasio.py
 
 
-
